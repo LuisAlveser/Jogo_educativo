@@ -11,38 +11,39 @@
     >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_width="300dp"
+        android:layout_height="116dp"
         android:layout_gravity="center"
-        android:background="@drawable/nexus_logo"
+        android:layout_margin="40dp"
+        android:background="@drawable/nexus_final_logo"
         android:textColor="@color/white"
         android:textSize="100dp"
-        android:layout_margin="40dp"
 
 
         />
 
+
     <Button
         android:id="@+id/jogar"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/commodore_pixeled"
-
-        android:onClick="jogar"
-        android:text="Jogar"
-        android:textSize="20dp" />
-    <Button
-        android:id="@+id/config"
-        android:onClick="config"
+        android:onClick="Jogar"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
         android:backgroundTint="@color/black"
-        android:text="Configurações"
+        android:text="Jogar"
+        android:textSize="20dp"
+        android:fontFamily="@font/commodore_pixeled"
+        />
+    <Button
+        android:id="@+id/tutorial"
+        android:onClick="Tutorial"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/black"
+        android:text="Tutorial"
         android:textSize="20dp"
         android:fontFamily="@font/commodore_pixeled"
         />
