@@ -12,28 +12,30 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="20dp"
         android:orientation="horizontal"
 
         >
 
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
-            android:background="@drawable/pont_max_teste"
-
+            android:text="PONTUAÇÃO MÁXIMA:"
+            android:textSize="9dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:textColor="@color/roxo"
             />
 
         <TextView
+            android:id="@+id/pontucao_max"
             android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_height="10dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="13dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="3000"
             android:textColor="@color/amarelo_ouro"
-            android:textSize="20dp"
+            android:textSize="10dp"
 
 
             />
@@ -42,28 +44,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="37dp"
+        android:layout_height="20dp"
         android:orientation="horizontal"
 
         >
 
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="3dp"
-            android:background="@drawable/pont_jogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="PONTUAÇÃO:"
+            android:textSize="9dp"
+            android:textColor="@color/roxo"
 
             />
 
         <TextView
+            android:id="@+id/pontucao"
             android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_height="10dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="7dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="100"
             android:textColor="@color/amarelo_ouro"
-            android:textSize="20dp"
+            android:textSize="10dp"
 
 
             />
@@ -71,28 +76,30 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="20dp"
         android:orientation="horizontal"
 
         >
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_marginLeft="3dp"
-            android:background="@drawable/vidas_teste"
-
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="VIDAS:"
+            android:textSize="9dp"
+            android:textColor="@color/roxo"
             />
 
         <TextView
+            android:id="@+id/vidas"
             android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="3dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="3"
             android:textColor="@color/vermelho"
-            android:textSize="20dp"
+            android:textSize="10dp"
 
 
             />

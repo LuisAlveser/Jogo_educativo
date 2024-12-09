@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_de_game_over"
+    android:orientation="vertical"
+    android:background="@drawable/fundo"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:text="VOCÊ MORREU"
+        android:textColor="@color/vermelho"
+        android:fontFamily="@font/commodore_pixeled"
+        android:textSize="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="Voltar_menu"
+            android:layout_marginTop="30dp"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="VOLTAR PARA MENU"
+            android:textSize="15dp" />
+
+        <Button
+            android:onClick="JOGAR_Novamente"
+            android:layout_marginTop="30dp"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="JOGAR NOVAMENTE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

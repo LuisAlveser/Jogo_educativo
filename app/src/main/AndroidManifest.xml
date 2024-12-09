@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Tela_de_game_over"
+            android:exported="false" />
+        <activity
             android:name=".Jogar"
             android:exported="false" />
         <activity

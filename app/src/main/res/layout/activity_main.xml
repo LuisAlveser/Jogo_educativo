@@ -15,7 +15,7 @@
         android:layout_height="116dp"
         android:layout_gravity="center"
         android:layout_margin="40dp"
-        android:background="@drawable/nexus_final_logo"
+        android:background="@drawable/nexus_logo_nova"
         android:textColor="@color/white"
         android:textSize="100dp"
 
