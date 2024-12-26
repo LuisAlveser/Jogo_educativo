@@ -10,44 +10,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-
-
-
-
-    //Função para ir para a tela de jogo
-    public void Jogar(View v){
-        Intent i =new Intent(this, Jogar.class);
+public class Tutorial_tela extends AppCompatActivity {
+    public void voltar_menu(View v){
+        Intent i =new Intent(this, MainActivity.class);
         startActivity(i);
 
     }
-    public void Tutorial(View v){
-        Intent i =new Intent(this, Tutorial_tela.class);
-        startActivity(i);
-
-    }
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
-
-
-
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tutorial_tela);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
-
-
     }
 }

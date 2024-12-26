@@ -8,39 +8,10 @@
     tools:context=".Jogar"
     android:orientation="vertical"
     android:background="@drawable/fundo_2"
+
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:orientation="horizontal"
 
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:text="PONTUAÇÃO MÁXIMA:"
-            android:textSize="9dp"
-            android:fontFamily="@font/commodore_pixeled"
-            android:textColor="@color/roxo"
-            />
-
-        <TextView
-            android:id="@+id/pontucao_max"
-            android:layout_width="150dp"
-            android:layout_height="10dp"
-            android:layout_marginLeft="5dp"
-            android:fontFamily="@font/commodore_pixeled"
-            android:text="3000"
-            android:textColor="@color/amarelo_ouro"
-            android:textSize="10dp"
-
-
-            />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +26,7 @@
             android:layout_marginLeft="4dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="PONTUAÇÃO:"
-            android:textSize="9dp"
+            android:textSize="15dp"
             android:textColor="@color/roxo"
 
             />
@@ -63,12 +34,12 @@
         <TextView
             android:id="@+id/pontucao"
             android:layout_width="150dp"
-            android:layout_height="10dp"
+            android:layout_height="15dp"
             android:layout_marginLeft="5dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="100"
             android:textColor="@color/amarelo_ouro"
-            android:textSize="10dp"
+            android:textSize="15dp"
 
 
             />
@@ -87,7 +58,7 @@
             android:layout_marginLeft="4dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="VIDAS:"
-            android:textSize="9dp"
+            android:textSize="15dp"
             android:textColor="@color/roxo"
             />
 
@@ -99,13 +70,129 @@
             android:fontFamily="@font/commodore_pixeled"
             android:text="3"
             android:textColor="@color/vermelho"
-            android:textSize="10dp"
-
-
+            android:textSize="15dp"
             />
+
     </LinearLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="Atirar"
+        android:visibility="visible"
 
+        >
+
+        <TextView
+            android:id="@+id/equacao_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="3x+3=0"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nave_1"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/alien_formato_novo"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/equacao_1"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="@+id/equacao_1"
+            app:layout_constraintTop_toBottomOf="@+id/equacao_1" />
+
+        <TextView
+            android:id="@+id/equacao_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="5x+2=3"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nave_2"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/alien_formato_novo"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/equacao_2"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="@+id/equacao_2"
+            app:layout_constraintTop_toBottomOf="@+id/equacao_2" />
+
+        <TextView
+            android:id="@+id/equacao_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="284dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="10x+8=0"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nave_3"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/alien_formato_novo"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/equacao_3"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="@+id/equacao_3"
+            app:layout_constraintTop_toBottomOf="@+id/equacao_3" />
+
+        <ImageView
+            android:id="@+id/nave_jogador"
+            android:layout_width="93dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="504dp"
+            android:src="@drawable/nave_formato_novo"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/resultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="51dp"
+            android:layout_height="17dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="x=5"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.949" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

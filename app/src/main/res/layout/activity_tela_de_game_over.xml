@@ -7,24 +7,83 @@
     android:layout_height="match_parent"
     tools:context=".Tela_de_game_over"
     android:orientation="vertical"
-    android:background="@drawable/fundo"
+    android:background="@drawable/fundo_2"
     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp"
-        android:text="VOCÊ MORREU"
+        android:layout_marginTop="200dp"
+        android:text="FIM DE JOGO"
         android:textColor="@color/vermelho"
         android:fontFamily="@font/commodore_pixeled"
         android:textSize="40dp"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:text="PONTUAÇÃO MÁXIMA:"
+            android:textSize="15dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/pontucao_max"
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="3000"
+            android:textColor="@color/amarelo_ouro"
+            android:textSize="17dp"
+            android:layout_marginTop="17dp"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:text="PONTUAÇÃO:"
+            android:textSize="15dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:textColor="@color/white"
+            />
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/commodore_pixeled"
+            android:text="800"
+            android:textColor="@color/amarelo_ouro"
+            android:textSize="17dp"
+            android:layout_marginTop="17dp"
+
+
+            />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="212dp"
         android:orientation="horizontal">
+
 
         <Button
             android:onClick="Voltar_menu"
@@ -35,7 +94,9 @@
             android:backgroundTint="@color/black"
             android:fontFamily="@font/commodore_pixeled"
             android:text="VOLTAR PARA MENU"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:onClick="JOGAR_Novamente"
@@ -46,7 +107,8 @@
             android:backgroundTint="@color/black"
             android:fontFamily="@font/commodore_pixeled"
             android:text="JOGAR NOVAMENTE"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

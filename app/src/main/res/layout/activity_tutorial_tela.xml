@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tutorial_tela"
+    android:orientation="vertical"
+    android:background="@drawable/fundo_tutorial">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/commodore_pixeled"
+        android:gravity="center"
+        android:text="TUTORIAL"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="Objetivo do jogo:"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="@font/commodore_pixeled"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/commodore_pixeled"
+        android:text="Pilote sua nave espacial e resolva os problemas matemáticos para derrotar os inimigos e acumular pontos!"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Controles:"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="@font/commodore_pixeled"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/commodore_pixeled"
+        android:text="Mova sua nave inclinando o celular para os lados e toque na tela para disparar!"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pontuação:"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="@font/commodore_pixeled"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/commodore_pixeled"
+        android:text="Acerte o valor do OVINI com a equação correta e ganhe 100 pontos "
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <Button
+        android:onClick="voltar_menu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Voltar"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/commodore_pixeled"
+
+        />
+    </LinearLayout>
+</LinearLayout>
