@@ -1,35 +1,33 @@
 package com.example.myapplication;
 
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Nave_inimiga {
     private ImageView imag;
-   private Bitmap inimigo;
-    private float  ex,ey;
-   private float velocidade=5;
-   private Random random;
-   private TextView equacao;
-   private Tiro tiros;
-   private ArrayList<Explosao>explosaos;
+    private Bitmap inimigo;
+    private float velocidade = 5;
+    private Random random;
+    private TextView equacao;
+    private RelativeLayout tela;
 
 
 
-
-
-    public Nave_inimiga(ImageView imag, float ex,float ey,TextView equacao) {
+    public Nave_inimiga(ImageView imag, TextView equacao) {
         this.imag = imag;
-        this.ex=ex;
-        this.ey=ey;
-        this.equacao=equacao;
+
+        this.equacao = equacao;
+
+
         this.inimigo = BitmapFactory.decodeResource(imag.getResources(), R.drawable.alien_formato_novo);
         random = new Random();
-        resetar_inimigo();
 
 
     }
@@ -42,55 +40,23 @@ public class Nave_inimiga {
         return imag;
     }
 
-    public void setEquacao(TextView equacao) {
-        this.equacao = equacao;
-    }
-
-    public TextView getEquacao() {
-        return equacao;
-    }
-
-    public Bitmap getInimigo() {
-        return inimigo;
-    }
-
-    public void setEy(float ey) {
-        this.ey = ey;
-    }
-
-    public float getEy() {
-        return ey;
-    }
-
-    public void setEx(float ex) {
-        this.ex = ex;
-    }
-
-    public float getEx() {
-        return ex;
-    }
-
-    private void resetar_inimigo() {
-
-        this.ey = 4 + random.nextInt(9);
-        velocidade = 5;
-    }
 
     public void update() {
 
-        this.ey+=velocidade;
+
+        float cont = imag.getTranslationY();
+        imag.setTranslationY(cont + 90);
+
 
     }
-    public void atualizar_equacao_inimiga(){
-       equacao.setX(this.ex);
-       equacao.setY(this.ey-4);
-    }
-    public void colisao(){
-        if(this.ey==tiros.getTy()){
 
-           this.imag.setX(explosaos.get(2).getEx());
-            this.imag.setY(explosaos.get(2).getEy());
+    public void atualizar_equacao_inimiga() {
+        update();
+        float inimigo_y = imag.getTranslationY() - 30;
+        equacao.setTranslationY(inimigo_y);
 
-        }
+
     }
+
+
 }
