@@ -9,10 +9,10 @@ import android.widget.RelativeLayout;
 public class Tiro {
 
     public ImageView imag;
-    private float velocidade = 30;
 
     public Tiro(ImageView imag) {
         this.imag=imag;
+
 
 
 
@@ -20,17 +20,29 @@ public class Tiro {
 
     public void atualizar_tiro_inicio(float jogadorX) {
         imag.setTranslationX(jogadorX);
-        imag.setTranslationY(imag.getTranslationY()-30);
+        imag.setTranslationY(imag.getTranslationY()-0.0010F);
 
     }
-    public void atualizar_tiro_fim() {
 
-        imag.setTranslationY(imag.getTranslationY()-30);
+    synchronized public void  atualizar_tiro_fim() {
+
+        imag.setTranslationY(imag.getY()-0.003F);
 
     }
+
+    synchronized public void  atualiza_tiro_visivel() {
+
+        imag.setVisibility(View.INVISIBLE);
+
+    }
+
+
 
     public ImageView getImag() {
         return imag;
     }
+
+
+
 
 }

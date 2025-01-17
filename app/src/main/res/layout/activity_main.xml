@@ -32,12 +32,11 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         android:text="Jogar"
         android:textSize="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:fontFamily="@font/commodore_pixeled"
-
         />
     <Button
         android:id="@+id/Tutorial"
@@ -46,24 +45,24 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         android:text="Tutorial"
         android:textSize="20dp"
         android:fontFamily="@font/commodore_pixeled"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         />
     <Button
         android:id="@+id/sair"
-        android:onClick="sair"
+        android:onClick="Sair"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         android:text="Sair"
         android:textSize="20dp"
         android:fontFamily="@font/commodore_pixeled"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         />
 
 

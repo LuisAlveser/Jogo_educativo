@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,17 +19,23 @@ public class MainActivity extends AppCompatActivity {
 
     //Função para ir para a tela de jogo
     public void Jogar(View v){
+        mediaPlayer.start();
         Intent i =new Intent(this, Jogar.class);
         startActivity(i);
 
     }
     public void Tutorial(View v){
+        mediaPlayer.start();
         Intent i =new Intent(this, Tutorial_tela.class);
         startActivity(i);
 
     }
+    public void Sair(View v){
+        mediaPlayer.start();
+        this.finishAffinity();
+    }
 
-
+MediaPlayer mediaPlayer;
 
 
     @Override
@@ -38,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+       mediaPlayer=MediaPlayer.create(this,R.raw.botao);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

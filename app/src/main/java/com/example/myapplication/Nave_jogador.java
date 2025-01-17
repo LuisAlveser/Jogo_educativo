@@ -18,7 +18,7 @@ public class Nave_jogador {
    private Bitmap jogador;
 
 
-   private    float velocidade;
+
 
    private TextView result;
 
@@ -44,4 +44,5 @@ public class Nave_jogador {
     public void setResult(TextView result) {
         this.result = result;
     }
+
 }

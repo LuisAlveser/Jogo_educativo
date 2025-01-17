@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
@@ -11,7 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Tutorial_tela extends AppCompatActivity {
+    MediaPlayer mediaPlayer;
     public void voltar_menu(View v){
+        mediaPlayer.start();
         Intent i =new Intent(this, MainActivity.class);
         startActivity(i);
 
@@ -19,6 +22,7 @@ public class Tutorial_tela extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_tutorial_tela);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -26,5 +30,6 @@ public class Tutorial_tela extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        mediaPlayer=MediaPlayer.create(this,R.raw.botao);
     }
 }

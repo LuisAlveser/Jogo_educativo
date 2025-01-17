@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.View;
@@ -17,6 +18,7 @@ public class Nave_inimiga {
     private Random random;
     private TextView equacao;
     private RelativeLayout tela;
+
 
 
 
@@ -43,20 +45,22 @@ public class Nave_inimiga {
 
     public void update() {
 
-
         float cont = imag.getTranslationY();
-        imag.setTranslationY(cont + 90);
+        imag.setTranslationY(cont + 0.0003F);
 
 
     }
 
     public void atualizar_equacao_inimiga() {
+
         update();
-        float inimigo_y = imag.getTranslationY() - 30;
+        float inimigo_y = imag.getTranslationY() - 0.0005f;
         equacao.setTranslationY(inimigo_y);
 
 
     }
 
-
+    public TextView getEquacao() {
+        return equacao;
+    }
 }

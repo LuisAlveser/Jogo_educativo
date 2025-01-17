@@ -28,18 +28,19 @@
             android:fontFamily="@font/commodore_pixeled"
             android:text="PONTUAÇÃO:"
             android:textSize="15dp"
-            android:textColor="@color/roxo"
+            android:textColor="@color/white"
 
             />
 
         <TextView
+
             android:id="@+id/pontucao"
             android:layout_width="150dp"
             android:layout_height="15dp"
             android:layout_marginLeft="5dp"
             android:fontFamily="@font/commodore_pixeled"
             android:text="0"
-            android:textColor="@color/amarelo_ouro"
+            android:textColor="@color/white"
             android:textSize="15dp"
 
 
@@ -53,26 +54,9 @@
 
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginLeft="4dp"
-            android:fontFamily="@font/commodore_pixeled"
-            android:text="VIDAS:"
-            android:textSize="15dp"
-            android:textColor="@color/roxo"
-            />
 
-        <TextView
-            android:id="@+id/vidas"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:fontFamily="@font/commodore_pixeled"
-            android:text="3"
-            android:textColor="@color/vermelho"
-            android:textSize="15dp"
-            />
+
+
 
     </LinearLayout>
 
@@ -91,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/commodore_pixeled"
-            android:text="3x+3=0"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="20dp"
             android:visibility="visible"
@@ -112,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/commodore_pixeled"
-            android:text="5x+2=3"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="20dp"
             android:visibility="visible"
@@ -130,10 +114,10 @@
 
         <TextView
             android:id="@+id/equacao_3"
-            android:layout_width="wrap_content"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/commodore_pixeled"
-            android:text="10x+8=0"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="20dp"
             android:visibility="visible"
